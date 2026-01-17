@@ -1,0 +1,136 @@
+/* :root {
+  --font-heading: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --background: #0b0f14;
+  --cards: #121826;
+  --primary-accent: #4f9cf9;
+  --secondary-accent: #22d3ee;
+  --text-primary: #e5e7eb;
+  --text-secondary: #9ca3af;
+  --borders: #1f2937;
+} */
+
+#store-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 5rem;
+  padding: 2rem;
+  background-color: var(--background);
+}
+
+.store-product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  background-color: var(--cards);
+  border: 1px solid var(--borders);
+  border-radius: 14px;
+  padding: 1.25rem;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.store-product-card {
+  display: flex;
+  flex-direction: column; /* vertical stacking */
+  gap: 0.75rem;
+
+  background-color: var(--cards);
+  border: 1px solid var(--borders);
+  border-radius: 14px;
+  padding: 1.25rem;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.store-product-card > img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+
+  border-radius: 10px;
+  background-color: #0e1422;
+  padding: 0.75rem;
+}
+
+.store-product-card > img:hover {
+  transform: scale(1.25);
+}
+
+.store-product-card h2 {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.store-product-card p {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.3px;
+}
+
+.store-product-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.store-product-card-details h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--secondary-accent);
+}
+
+.rating {
+  display: flex;
+  color: var(--font-body);
+  gap: 1vw;
+}
+
+.rating img {
+  filter: invert(0.5);
+  height: 1rem;
+  width: auto;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.add-btn {
+  margin-top: auto;
+  padding: 0.65rem 1rem;
+
+  background: linear-gradient(
+    135deg,
+    var(--primary-accent),
+    var(--secondary-accent)
+  );
+  color: #020617;
+
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  text-align: center;
+}
+
+.add-btn {
+  text-decoration: none;
+  color: inherit;
+}
+
+.add-btn {
+  transform: translateY(-0.75vh);
+  opacity: 0.9;
+}
